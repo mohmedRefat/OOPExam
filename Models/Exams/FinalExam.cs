@@ -10,7 +10,7 @@ namespace Models.Exams
         {
         }
 
-        public override void DisplayAllQuestions()
+        public override void ShowQuestion()
         {
             Console.WriteLine("*********** Final Exam ***********");
             Console.WriteLine($"Time: {Time} Minutes");

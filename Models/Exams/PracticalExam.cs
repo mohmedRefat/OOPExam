@@ -7,9 +7,16 @@ namespace Models.Exams
         public PracticalExam(int time, Question[] questionsArr)
             : base(time, questionsArr)
         {
+              foreach (var question in questionsArr)
+            {
+                if (question is not MCQQuestion)
+                {
+                    throw new ArgumentException("Practical Exam accept ony mcq  Questionss");
+                }
+            }
         }
 
-        public override void DisplayAllQuestions()
+        public override void ShowQuestion()
         {
             Console.WriteLine("******* Practical Exam ******* ");
             Console.WriteLine($"Time: {Time} Minutes");
