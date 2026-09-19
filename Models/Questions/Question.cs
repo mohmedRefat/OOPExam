@@ -21,7 +21,7 @@ namespace Models.Questions
             RightAnswer = rightAns;
         }
             // will be implemented in (mcq, true/false) classes
-        public abstract void DisplayAllQuestions();
+        public abstract void ShowQuestion();
 
 
         //* Create deep copy of the question object
